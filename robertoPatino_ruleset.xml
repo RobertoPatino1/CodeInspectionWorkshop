@@ -16,7 +16,7 @@ https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 	<priority>1</priority>
 </rule>
 <rule ref="category/java/codestyle.xml/ClassNamingConventions" />
-<rule ref="category/java/errorprone.xml/NonSerializableClass">
+<rule ref="category/java/errorprone.xml/BeanMembersShouldSerialize">
 	<priority>2</priority>
 </rule>
 <rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions" />
