@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2024-06-06T17:16:58.610">
+    version="6.21.0" timestamp="2024-06-06T17:46:15.774">
 <file name="/home/edg3runn3r/Documents/Espol/software2/taller2/CodeInspection/src/main/java/labcodeinspection/Email.java">
 <violation beginline="5" endline="5" begincolumn="24" endcolumn="34" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="labcodeinspection" class="Email" variable="m_firstName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="2">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
