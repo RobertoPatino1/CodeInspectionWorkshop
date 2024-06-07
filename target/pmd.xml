@@ -2,13 +2,5 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2024-06-06T18:51:56.040">
-<file name="/home/edg3runn3r/Documents/Espol/software2/taller2/CodeInspection/src/main/java/labcodeinspection/Email.java">
-<violation beginline="74" endline="74" begincolumn="30" endcolumn="59" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="labcodeinspection" class="Email" method="generateEmail" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
-When doing a String.toLowerCase()/toUpperCase() call, use a Locale
-</violation>
-<violation beginline="74" endline="74" begincolumn="63" endcolumn="91" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="labcodeinspection" class="Email" method="generateEmail" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
-When doing a String.toLowerCase()/toUpperCase() call, use a Locale
-</violation>
-</file>
+    version="6.21.0" timestamp="2024-06-06T19:35:44.080">
 </pmd>
