@@ -1,24 +1,40 @@
 package labcodeinspection;
+import java.util.Locale;
 
 public class Email {
 
-	private final String m_firstName;	
-	private final String m_lastName;
-	private String password;
-	private String department;
-	private final int defaultpasswordLength = 8;
-	private String email;
+	private transient final String m_firstName;	
+	private transient final String m_lastName;
+	private transient String password;
+	private transient String department;
+	private transient final int defaultpasswordLength = 8;
+	private transient String email;
 
+	/**
+	* 
+	*
+	* Constructor
+	*/
 	public Email(String firstName, String lastName) {
 		this.m_firstName = firstName;
 		this.m_lastName = lastName;
 	}
 
+	/**
+	* 
+	*
+	* This method shows user information
+	*/
 	public void showInfo() {
 		System.out.println("\nFIRST NAME= " + m_firstName + "\nLAST NAME= " + m_lastName);
 		System.out.println("DEPARMENT= " + department + "\nEMAIL= " + email + "\nPASSWORD= " + password);
 	}
 
+	/**
+	* 
+	*
+	* Set a specific department based on a choice
+	*/
 	public void setDeparment(int depChoice) {
 		switch (depChoice) {
 		case 1:
@@ -34,7 +50,11 @@ public class Email {
 			break;
 		}
 	}
-
+	/**
+	* 
+	*
+	* This method generates a random password
+	*/
 	private String randomPassword(int length) {
 		String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$&@*";
 		char[] password = new char[length];
@@ -45,7 +65,13 @@ public class Email {
 		return new String(password);
 	}
 
+	/**
+	* 
+	*
+	* Email generator
+	*/
 	public void generateEmail() {
+		Locale.setDefault(new Locale("en"));
 		this.password = this.randomPassword(this.defaultpasswordLength);
 		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
 				+ ".espol.edu.ec";

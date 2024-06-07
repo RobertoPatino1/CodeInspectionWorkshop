@@ -2,11 +2,15 @@ package labcodeinspection;
 
 import java.util.Scanner;
 
-
 public final class EmailApp {
 	
 	private EmailApp() {}
-	
+	/**
+	* 
+	*
+	* Main function, this asks the user to input data in order to generate
+	* an email and show the information
+	*/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
